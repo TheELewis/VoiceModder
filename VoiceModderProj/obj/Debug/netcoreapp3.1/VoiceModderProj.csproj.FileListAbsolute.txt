@@ -1,0 +1,17 @@
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.csprojAssemblyReference.cache
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.AssemblyInfoInputs.cache
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.AssemblyInfo.cs
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.csproj.CoreCompileInputs.cache
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\bin\Debug\netcoreapp3.1\VoiceModderProj.exe
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\bin\Debug\netcoreapp3.1\VoiceModderProj.deps.json
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\bin\Debug\netcoreapp3.1\VoiceModderProj.runtimeconfig.json
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\bin\Debug\netcoreapp3.1\VoiceModderProj.runtimeconfig.dev.json
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\bin\Debug\netcoreapp3.1\VoiceModderProj.dll
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\bin\Debug\netcoreapp3.1\VoiceModderProj.pdb
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\bin\Debug\netcoreapp3.1\NAudio.dll
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.Form1.resources
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.csproj.GenerateResource.cache
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.csproj.CopyComplete
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.dll
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.pdb
+D:\Documents\_Projects\VoiceModder\VoiceModderProj\obj\Debug\netcoreapp3.1\VoiceModderProj.genruntimeconfig.cache
