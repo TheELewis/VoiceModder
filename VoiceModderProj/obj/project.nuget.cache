@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hraGkryDV+R9ZtZ9oT71vvvyg43Wc0zAqgfcZ5ZV0oVqeNvzxcTyI0378x/CPqFRpfhOkYFKqEe9R066uJeiEg==",
+  "dgSpecHash": "vHSsgHRai0NrmB68LdPr9uh7FgN57eFOXyXOcI9jt1KWSHY02o4cjmmDj2LrsLUZyViwPNvfDPwrmTIHJtl5uw==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\_Projects\\VoiceModder\\VoiceModderProj\\VoiceModderProj.csproj",
+  "projectFilePath": "D:\\Documents\\_Projects\\VoiceModder\\VoiceModder\\VoiceModderProj\\VoiceModderProj.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erikn\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\erikn\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

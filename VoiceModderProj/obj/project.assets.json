@@ -313,11 +313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\_Projects\\VoiceModder\\VoiceModderProj\\VoiceModderProj.csproj",
+      "projectUniqueName": "D:\\Documents\\_Projects\\VoiceModder\\VoiceModder\\VoiceModderProj\\VoiceModderProj.csproj",
       "projectName": "VoiceModderProj",
-      "projectPath": "D:\\Documents\\_Projects\\VoiceModder\\VoiceModderProj\\VoiceModderProj.csproj",
+      "projectPath": "D:\\Documents\\_Projects\\VoiceModder\\VoiceModder\\VoiceModderProj\\VoiceModderProj.csproj",
       "packagesPath": "C:\\Users\\erikn\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\_Projects\\VoiceModder\\VoiceModderProj\\obj\\",
+      "outputPath": "D:\\Documents\\_Projects\\VoiceModder\\VoiceModder\\VoiceModderProj\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
