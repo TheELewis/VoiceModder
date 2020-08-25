@@ -121,26 +121,4 @@ namespace VoiceModderProj
             }
         }
     }
-    public abstract class Effect
-    {
-        public abstract void Slider();
-        private List<Slider> sliders;
-        public float SampleRate { get; set; }
-        public float Tempo { get; set; }
-        public bool Enabled { get; set; }
-
-        public Effect()
-        {
-            sliders = new List<Slider>();
-            Enabled = true;
-            Tempo = 120;
-            SampleRate = 44100;
-        }
-
-        public IList<Slider> Sliders { get { return sliders; } }
-
-        
-
-
-    }
 }

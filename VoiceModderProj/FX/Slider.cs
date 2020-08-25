@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Adapted form Mark Heath's Skype Voice Changer https://github.com/markheath/skypevoicechanger/tree/master/SkypeVoiceChanger/Effects
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
