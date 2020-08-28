@@ -1,13 +1,19 @@
 import wave
 import _thread
 import pyaudio
+import sys
+import struct
+import numpy as np
+from librosa import effects
+from pitcher import pitchshift
+#import sounddevice
 
-CHUNK = 1024
+CHUNK = 8
 FORMAT = pyaudio.paInt16
 CHANNELS = 2
-RATE = 44100
-RECORD_SECONDS = 5
-WAVE_OUTPUT_FILENAME = "..\\outputs\\ouput.wav"
+RATE = 48000
+RECORD_SECONDS = 2
+WAVE_OUTPUT_FILENAME = "outputs/output.wav"
 
 # def input_thread(a_list):
 #     input()
@@ -20,27 +26,38 @@ WAVE_OUTPUT_FILENAME = "..\\outputs\\ouput.wav"
 def main():
     p = pyaudio.PyAudio()
 
+    silence = chr(0)*CHUNK*CHANNELS*2
     stream = p.open(format=FORMAT,
                     channels=CHANNELS,
                     rate=RATE,
                     input=True,
-                    input_device_index=1,
                     output=True,
-                    output_device_index=4,
                     frames_per_buffer=CHUNK)
 
     print("[INFO]:Recording from device...")
 
     frames = []
-    a_list = []
-    # _thread.start_new_thread(input_thread, (a_list,))
+    swidth = 2
 
-    # while not a_list:
-    #     record_audio(stream, frames)
-    
+
     for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
-        print("[INFO]Recording sample {}".format(i))
-        data = stream.read(CHUNK)
+        #print("[INFO]Recording sample {}".format(i))
+        data = stream.read(CHUNK, exception_on_overflow=False)
+        if data == '':
+            data = silence
+
+        fx_data = np.array(map(float, data))
+        
+        # #adding FX
+        # data = np.array(wave.struct.unpack("%dh"%(len(data)/swidth), data))*2
+        # data = np.fft.rfft(data)
+        # data = effects.pitch_shift(data, RATE, n_steps=-5)
+        # data = np.fft.irfft(data)
+        # dataout = np.array(data*0.5, dtype='int16')
+        # chunkout = wave.struct.pack("%dh"%(len(dataout)), *list(dataout))
+        # stream.write(chunkout, CHUNK)
+        # frames.append(chunkout)
+
         stream.write(data, CHUNK)
         frames.append(data)
 
@@ -52,12 +69,12 @@ def main():
     stream.close()
     p.terminate()
 
-    # wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
-    # wf.setnchannels(CHANNELS)
-    # wf.setsampwidth(p.get_sample_size(FORMAT))
-    # wf.setframerate(RATE)
-    # wf.writeframes(b''.join(frames))
-    # wf.close()
+    wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
+    wf.setnchannels(CHANNELS)
+    wf.setsampwidth(p.get_sample_size(FORMAT))
+    wf.setframerate(RATE)
+    wf.writeframes(b''.join(frames))
+    wf.close()
 
 
 
